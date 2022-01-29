@@ -8,22 +8,14 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
                               C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega324p/avr5/crtatmega324p.o (exit)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
                               main.o (__do_copy_data)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
-                              main.o (sprintf)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o) (vfprintf)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (strnlen_P)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (strnlen)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (fputc)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (__ultoa_invert)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o) (__prologue_saves__)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o) (__epilogue_restores__)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                              main.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+ICodes              0x1               main.o
+RCodes              0x1               main.o
 
 Discarded input sections
 
@@ -32,12 +24,17 @@ Discarded input sections
  .text          0x00000000        0x0 main.o
  .data          0x00000000        0x0 main.o
  .bss           0x00000000        0x0 main.o
+ COMMON         0x00000000        0x2 main.o
  .text          0x00000000        0x0 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
  .data          0x00000000        0x0 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
  .bss           0x00000000        0x0 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
+ .text.hall_get_current
+                0x00000000       0x24 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
  .text          0x00000000        0x0 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
  .data          0x00000000        0x0 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
  .bss           0x00000000        0x0 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
+ .text.RPI_send_string
+                0x00000000       0x38 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
  .text.RPI_receive_char
                 0x00000000        0xe C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
  .text.RPI_receive_string
@@ -74,52 +71,22 @@ Discarded input sections
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.fixed
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.mul
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.div
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
- .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.builtins
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.fmul
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.fixed
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
- .text.libgcc.mul
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
- .text.libgcc.div
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
- .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
- .text.libgcc.builtins
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
- .text.libgcc.fmul
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
- .text.libgcc.fixed
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
 
 Memory Configuration
 
@@ -249,7 +216,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x804
+.text           0x00000000      0x284
  *(.vectors)
  .vectors       0x00000000       0x7c C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega324p/avr5/crtatmega324p.o
                 0x00000000                __vector_default
@@ -292,6 +259,8 @@ END GROUP
  *(.init4)
  .init4         0x00000088       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
                 0x00000088                __do_copy_data
+ .init4         0x0000009e       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000009e                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
@@ -302,89 +271,61 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x0000009e        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega324p/avr5/crtatmega324p.o
+ .init9         0x000000ae        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega324p/avr5/crtatmega324p.o
  *(.init9)
  *(.text)
- .text          0x000000a6        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega324p/avr5/crtatmega324p.o
-                0x000000a6                __vector_22
-                0x000000a6                __vector_28
-                0x000000a6                __vector_1
-                0x000000a6                __vector_24
-                0x000000a6                __vector_12
-                0x000000a6                __bad_interrupt
-                0x000000a6                __vector_6
-                0x000000a6                __vector_3
-                0x000000a6                __vector_23
-                0x000000a6                __vector_30
-                0x000000a6                __vector_25
-                0x000000a6                __vector_11
-                0x000000a6                __vector_13
-                0x000000a6                __vector_17
-                0x000000a6                __vector_19
-                0x000000a6                __vector_7
-                0x000000a6                __vector_27
-                0x000000a6                __vector_5
-                0x000000a6                __vector_4
-                0x000000a6                __vector_9
-                0x000000a6                __vector_2
-                0x000000a6                __vector_21
-                0x000000a6                __vector_15
-                0x000000a6                __vector_29
-                0x000000a6                __vector_8
-                0x000000a6                __vector_26
-                0x000000a6                __vector_14
-                0x000000a6                __vector_10
-                0x000000a6                __vector_16
-                0x000000a6                __vector_18
-                0x000000a6                __vector_20
-                0x000000aa                . = ALIGN (0x2)
+ .text          0x000000b6        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega324p/avr5/crtatmega324p.o
+                0x000000b6                __vector_22
+                0x000000b6                __vector_28
+                0x000000b6                __vector_1
+                0x000000b6                __vector_24
+                0x000000b6                __vector_12
+                0x000000b6                __bad_interrupt
+                0x000000b6                __vector_6
+                0x000000b6                __vector_3
+                0x000000b6                __vector_23
+                0x000000b6                __vector_30
+                0x000000b6                __vector_25
+                0x000000b6                __vector_11
+                0x000000b6                __vector_13
+                0x000000b6                __vector_17
+                0x000000b6                __vector_19
+                0x000000b6                __vector_7
+                0x000000b6                __vector_27
+                0x000000b6                __vector_5
+                0x000000b6                __vector_4
+                0x000000b6                __vector_9
+                0x000000b6                __vector_2
+                0x000000b6                __vector_21
+                0x000000b6                __vector_15
+                0x000000b6                __vector_29
+                0x000000b6                __vector_8
+                0x000000b6                __vector_26
+                0x000000b6                __vector_14
+                0x000000b6                __vector_10
+                0x000000b6                __vector_16
+                0x000000b6                __vector_18
+                0x000000ba                . = ALIGN (0x2)
  *(.text.*)
- .text.main     0x000000aa       0x66 main.o
-                0x000000aa                main
+ .text.main     0x000000ba       0xf8 main.o
+                0x000000ba                main
+ .text.__vector_20
+                0x000001b2       0x20 main.o
+                0x000001b2                __vector_20
  .text.hall_ADC_setup
-                0x00000110       0x44 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
-                0x00000110                hall_ADC_setup
- .text.hall_get_current
-                0x00000154       0x36 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
-                0x00000154                hall_get_current
+                0x000001d2       0x44 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
+                0x000001d2                hall_ADC_setup
  .text.RPI_usart_setup
-                0x0000018a       0x5c C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
-                0x0000018a                RPI_usart_setup
+                0x00000216       0x5c C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
+                0x00000216                RPI_usart_setup
  .text.RPI_send_char
-                0x000001e6        0xe C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
-                0x000001e6                RPI_send_char
- .text.RPI_send_string
-                0x000001f4       0x38 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
-                0x000001f4                RPI_send_string
- .text.avr-libc
-                0x0000022c       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
-                0x0000022c                sprintf
- .text.avr-libc
-                0x00000270      0x3c2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
-                0x00000270                vfprintf
- .text.avr-libc
-                0x00000632       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
-                0x00000632                strnlen_P
- .text.avr-libc
-                0x00000648       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
-                0x00000648                strnlen
- .text.avr-libc
-                0x0000065e       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
-                0x0000065e                fputc
- .text.avr-libc
-                0x000006d6       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
-                0x000006d6                __ultoa_invert
- .text.libgcc.prologue
-                0x00000792       0x38 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
-                0x00000792                __prologue_saves__
- .text.libgcc.prologue
-                0x000007ca       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
-                0x000007ca                __epilogue_restores__
-                0x00000800                . = ALIGN (0x2)
+                0x00000272        0xe C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
+                0x00000272                RPI_send_char
+                0x00000280                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000800        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00000800                _exit
-                0x00000800                exit
+ .fini9         0x00000280        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00000280                _exit
+                0x00000280                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -403,39 +344,40 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000800        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000280        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000804                _etext = .
+                0x00000284                _etext = .
 
-.data           0x00800100        0x4 load address 0x00000804
+.data           0x00800100        0x2 load address 0x00000284
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
+ .data.resp_char
+                0x00800100        0x1 main.o
+                0x00800100                resp_char
  *(.gnu.linkonce.d*)
  *(.rodata)
  *(.rodata*)
- .rodata.str1.1
-                0x00800100        0x3 main.o
  *(.gnu.linkonce.r*)
-                0x00800104                . = ALIGN (0x2)
- *fill*         0x00800103        0x1 
-                0x00800104                _edata = .
-                0x00800104                PROVIDE (__data_end, .)
+                0x00800102                . = ALIGN (0x2)
+ *fill*         0x00800101        0x1 
+                0x00800102                _edata = .
+                0x00800102                PROVIDE (__data_end, .)
 
-.bss            0x00800104        0x0
-                [!provide]                PROVIDE (__bss_start, .)
+.bss            0x00800102        0x0
+                0x00800102                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  *(COMMON)
-                [!provide]                PROVIDE (__bss_end, .)
-                0x00000804                __data_load_start = LOADADDR (.data)
-                0x00000808                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00800102                PROVIDE (__bss_end, .)
+                0x00000284                __data_load_start = LOADADDR (.data)
+                0x00000286                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800104        0x0
+.noinit         0x00800102        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800104                _end = .
+                0x00800102                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -475,16 +417,12 @@ END GROUP
 .stab.indexstr
  *(.stab.indexstr)
 
-.comment        0x00000000       0x5c
+.comment        0x00000000       0x30
  *(.comment)
  .comment       0x00000000       0x30 main.o
                                  0x31 (size before relaxing)
  .comment       0x00000030       0x31 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
  .comment       0x00000030       0x31 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
- .comment       0x00000030       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
- .comment       0x00000030       0x2c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
-                                 0x2d (size before relaxing)
- .comment       0x0000005c       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
 
 .note.gnu.avr.deviceinfo
                 0x00000000       0x40
@@ -506,60 +444,59 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000       0x88
+.debug_aranges  0x00000000       0x90
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x20 main.o
+                0x00000000       0x28 main.o
  .debug_aranges
-                0x00000020       0x28 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
+                0x00000028       0x28 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
  .debug_aranges
-                0x00000048       0x40 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
+                0x00000050       0x40 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0xae3
+.debug_info     0x00000000      0xbaf
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x6cc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega324p/avr5/crtatmega324p.o
- .debug_info    0x000006cc      0x1d0 main.o
- .debug_info    0x0000089c       0xc0 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
- .debug_info    0x0000095c      0x187 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
+ .debug_info    0x000006cc      0x2b4 main.o
+ .debug_info    0x00000980       0xa8 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
+ .debug_info    0x00000a28      0x187 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
 
-.debug_abbrev   0x00000000      0x935
+.debug_abbrev   0x00000000      0x8e4
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x66e C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega324p/avr5/crtatmega324p.o
- .debug_abbrev  0x0000066e      0x13d main.o
- .debug_abbrev  0x000007ab       0x83 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
- .debug_abbrev  0x0000082e      0x107 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
+ .debug_abbrev  0x0000066e      0x104 main.o
+ .debug_abbrev  0x00000772       0x6b C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
+ .debug_abbrev  0x000007dd      0x107 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
 
-.debug_line     0x00000000      0x61f
+.debug_line     0x00000000      0x67c
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x152 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega324p/avr5/crtatmega324p.o
- .debug_line    0x00000152      0x1f4 main.o
- .debug_line    0x00000346      0x109 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
- .debug_line    0x0000044f      0x1d0 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
+ .debug_line    0x00000152      0x257 main.o
+ .debug_line    0x000003a9      0x103 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
+ .debug_line    0x000004ac      0x1d0 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
 
 .debug_frame    0x00000000      0x100
  *(.debug_frame)
- .debug_frame   0x00000000       0x34 main.o
- .debug_frame   0x00000034       0x44 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
+ .debug_frame   0x00000000       0x44 main.o
+ .debug_frame   0x00000044       0x34 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
  .debug_frame   0x00000078       0x88 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
 
-.debug_str      0x00000000      0x55e
+.debug_str      0x00000000      0x6ce
  *(.debug_str)
  .debug_str     0x00000000      0x255 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega324p/avr5/crtatmega324p.o
- .debug_str     0x00000255      0x1e9 main.o
-                                0x222 (size before relaxing)
- .debug_str     0x0000043e       0x78 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
-                                0x1aa (size before relaxing)
- .debug_str     0x000004b6       0xa8 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
+ .debug_str     0x00000255      0x349 main.o
+                                0x382 (size before relaxing)
+ .debug_str     0x0000059e       0x78 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
+                                0x1a1 (size before relaxing)
+ .debug_str     0x00000616       0xb8 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
                                 0x1fe (size before relaxing)
 
-.debug_loc      0x00000000      0x1d6
+.debug_loc      0x00000000      0x183
  *(.debug_loc)
- .debug_loc     0x00000000       0x47 main.o
- .debug_loc     0x00000047       0x48 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
- .debug_loc     0x0000008f      0x147 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
+ .debug_loc     0x00000000       0x3c main.o
+ .debug_loc     0x0000003c      0x147 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -579,11 +516,11 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000       0x58
+.debug_ranges   0x00000000       0x60
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x10 main.o
- .debug_ranges  0x00000010       0x18 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
- .debug_ranges  0x00000028       0x30 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
+ .debug_ranges  0x00000000       0x18 main.o
+ .debug_ranges  0x00000018       0x18 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\HallSensor\Debug\libHallSensor.a(HallSensor.o)
+ .debug_ranges  0x00000030       0x30 C:\Users\arthu\Documents\Microchip Studio\projects\GIP_mcu\RpiConnection\Debug\libRpiCommunication.a(RpiCommunication.o)
 
 .debug_macro
  *(.debug_macro)

@@ -33,8 +33,8 @@ void hall_ADC_setup(void){
 uint16_t hall_get_current(void){
 	ADCSRA |= (1 << ADSC);
 	while((ADCSRA & (1 << ADSC)));
-	volatile unsigned int HighByte = ADCH;
-	return ADCL;
+	
+	return ((((uint16_t)ADCH) << 8) | ADCL);
 }
 
 

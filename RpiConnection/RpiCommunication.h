@@ -27,6 +27,7 @@ enum InstructionCodes{
 enum ResponseCodes{
 	Nop,
 	CreatedConnection,
+	ClosedConnection,
 	SendingMemData,
 	HandbrakeUnlocked,
 	HandbrakeLocked,
@@ -35,6 +36,7 @@ enum ResponseCodes{
 	SendingCalibrationResult,
 	SendingTotalCapacity,
 	ConnectionError,
+	SendingRemainingBatteryCharge,
 };
 
 extern void RPI_usart_setup(void);
