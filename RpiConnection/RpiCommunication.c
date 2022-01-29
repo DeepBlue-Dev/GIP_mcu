@@ -53,6 +53,7 @@ void RPI_send_string(char msg[]){
 		}
 		
 		RPI_send_char(msg[index]);
+		index++;
 	}
 }
 
