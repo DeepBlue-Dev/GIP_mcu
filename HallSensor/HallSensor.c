@@ -65,7 +65,7 @@ void hall_interpret_result(Battery *p_battery, uint16_t result){
 			p_battery->ChargeCurrent = 0;	//	reset the current that went into the battery
 			
 		} else {
-			if(p_battery->ChargeCurrent + result < 18446744073709551615ul)
+			if(p_battery->ChargeCurrent + result < 18446744073709551615ul)	//	overflow protectin
 				p_battery->ChargeCurrent += result;
 		}
 	} else {
@@ -74,7 +74,7 @@ void hall_interpret_result(Battery *p_battery, uint16_t result){
 			p_battery->RemainingBatteryCapacity = p_battery->ChargeCurrent;
 			p_battery->ChargeCurrent = 0;
 		} else {
-			if(p_battery->RemainingBatteryCapacity > 1024){
+			if(p_battery->RemainingBatteryCapacity - result >= 0){	
 				p_battery->RemainingBatteryCapacity -= result;
 			}
 			

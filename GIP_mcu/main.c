@@ -11,7 +11,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/interrupt.h>
-#include <stdio.h>
+#include <stdlib.h>
 #include <RpiCommunication.h>
 #include <HallSensor.h>
 
@@ -43,67 +43,62 @@ int main(void)
 	while (1)
 	{
 
-	if(battery.AdcActivated && !(ADCSRA & (1 << ADSC))){	//	ADC has been activated, and is no longer active, so there is a result
-		hall_interpret_result(&battery, hall_get_result());
-		sprintf(buffer, "%lu",battery.RemainingBatteryCapacity);
-		RPI_send_string(buffer);
+	if(battery.AdcActivated){	//	ADC has been activated, and is no longer active, so there is a result
+		hall_interpret_result(&battery,hall_get_current());
 		battery.AdcActivated = 0;
-		PORTC ^= (1 << PORTC6);
 	}
 
 		if(resp_char != 255){	//	An instruction arrived
 			switch(resp_char){
 				case CreateConnection:
-				RPI_send_char((char)CreatedConnection);
-				resp_char = 255;
-				break;
+					RPI_send_char((char)CreatedConnection);
+					resp_char = 255;
+					break;
 				case CloseConnection:
-				RPI_send_char((char)ClosedConnection);
-				resp_char = 255;
-				break;
+					RPI_send_char((char)ClosedConnection);
+					resp_char = 255;
+					break;
 				case SendDataFromMemory:
-				RPI_send_char((char)SendingMemData);
-				resp_char = 255;
-				break;
+					RPI_send_char((char)SendingMemData);
+					resp_char = 255;
+					break;
 				case UnlockHandbrake:
-				PORTC &= ~(1 << HANDBRAKE);
-				RPI_send_char((char)HandbrakeUnlocked);
-				resp_char = 255;
-				break;
+					PORTC &= ~(1 << HANDBRAKE);
+					RPI_send_char((char)HandbrakeUnlocked);
+					resp_char = 255;
+					break;
 				case LockHandbrake:
-				PORTC |= (1 << HANDBRAKE);
-				RPI_send_char((char)HandbrakeLocked);
-				resp_char = 255;
-				break;
+					PORTC |= (1 << HANDBRAKE);
+					RPI_send_char((char)HandbrakeLocked);
+					resp_char = 255;
+					break;
 				case StartCalibration:
-				RPI_send_char((char)CalibrationStarted);
-				resp_char = 255;
-				break;
+					RPI_send_char((char)CalibrationStarted);
+					resp_char = 255;
+					break;
 				case StopCalibration:
-				RPI_send_char((char)CalibrationStopped);
-				resp_char = 255;
-				break;
+					RPI_send_char((char)CalibrationStopped);
+					resp_char = 255;
+					break;
 				case GetCalibrationResult:
-				RPI_send_char((char)SendingCalibrationResult);
-				resp_char = 255;
-				break;
+					RPI_send_char((char)SendingCalibrationResult);
+					resp_char = 255;
+					break;
 				case GetTotalCapacity:
-				RPI_send_char((char)SendingTotalCapacity);
-				resp_char = 255;
-				break;
+					RPI_send_char((char)SendingTotalCapacity);
+					resp_char = 255;
+					break;
 				case GetRemainingBatteryCharge:
-				RPI_send_char((char)SendingRemainingBatteryCharge);
-				sprintf(buffer, "%lu",battery.RemainingBatteryCapacity);
-				RPI_send_string(buffer);
-				resp_char = 255;
-				break;
+					RPI_send_char((char)SendingRemainingBatteryCharge);
+					ultoa(battery.RemainingBatteryCapacity, buffer, 10);	//	convert the long to an ascii string
+					RPI_send_string(buffer);
+					resp_char = 255;
+					break;
 				default:
-				RPI_send_char((char)Nop);
-				resp_char = 255;
+					RPI_send_char((char)Nop);
+					resp_char = 255;
 			}
-		}
-
-			
+		}					
 	}
 	return 1;
 }
@@ -120,7 +115,6 @@ ISR(TIMER0_COMPA_vect){
 		
 	} else {
 		cntr = 0;
-		ADCSRA |= (1 << ADSC);	//	activate ADC
 		battery.AdcActivated = 1;
 	}
 
